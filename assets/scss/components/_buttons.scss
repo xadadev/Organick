@@ -1,0 +1,42 @@
+
+
+/* ########################################## */
+/*                4.COMPONENTS                */
+/* ########################################## */
+
+/* ------------------ 4.1 Buttons ----------------- */
+
+.xd__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: var(--size-1);
+    border-radius: 8px;
+    transition: 0.5s linear 0.1s;
+    -webkit-transition: 0.5s linear 0.1s;
+    -moz-transition: 0.5s linear 0.1s;
+    -ms-transition: 0.5s linear 0.1s;
+    -o-transition: 0.5s linear 0.1s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .xd__btn:hover {
+    gap: 0.7rem;
+  }
+  
+  
+  .btn-primary{
+    background-color: #efd372;
+    color: var(--primary-color-1);
+  }
+  
+  .btn-secondary{
+    background-color: var(--primary-color-3);
+    color: #fff;
+  }
+  
+  

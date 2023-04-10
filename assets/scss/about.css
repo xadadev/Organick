@@ -1,0 +1,157 @@
+/* ############################################ */
+/*                     ABOUT                    */
+/* ############################################ */
+.about__banner {
+  background-image: url(../graphics/about-page/about-banner-bg.png);
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  align-items: end;
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__sub-content {
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about__title {
+  font-family: "Roboto";
+  line-height: 29px;
+  color: var(--primary-color-1);
+  font-weight: 700;
+}
+
+@media (max-width: 950px) {
+  .about__left {
+    order: 2;
+  }
+}
+/* ############################################ */
+/*                    WHY US                    */
+/* ############################################ */
+#why-us {
+  background-color: var(--secondary-color-1);
+}
+
+.why-us {
+  padding-bottom: 5rem;
+}
+
+.about__why-sub {
+  gap: 1rem;
+  padding: var(--size-2);
+  background: var(--secondary-color-1);
+  width: fit-content;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.why__p {
+  max-width: 41ch;
+  margin-left: 3rem;
+  padding-block: 1rem;
+}
+
+.about__why-detail {
+  gap: 2rem;
+}
+
+.about__why-box {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--size-2);
+  text-align: center;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.why-box-title {
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: var(--font-p);
+  color: var(--primary-color-1);
+}
+
+/* ---------- Organic Store Services ---------- */
+.organic__title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.organic__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+.organic__col {
+  gap: 2.5rem;
+  align-items: stretch;
+}
+.organic__col img {
+  border-radius: 18px;
+}
+.organic__col span {
+  background-color: var(--secondary-color-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 18px;
+  padding-inline: var(--size-3);
+}
+.organic__col span .organic__gird-title {
+  font-family: "Roboto";
+  font-size: var(--font-subtitle);
+  color: var(--primary-color-1);
+}
+
+.organic__points,
+.organic__point-1 {
+  gap: 2.5rem;
+}
+.organic__points .organic__num,
+.organic__point-1 .organic__num {
+  background-color: var(--primary-color-2);
+  padding: 1rem;
+  border-radius: 50px;
+  color: #fff;
+}
+.organic__points p,
+.organic__point-1 p {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: var(--font-subtitle);
+  color: var(--primary-color-1);
+}
+
+.organic__point-1 {
+  background-color: var(--secondary-color-1);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}

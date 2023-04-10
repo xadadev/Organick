@@ -1,0 +1,119 @@
+// Import base styles
+@import "base/_base.scss";
+
+
+
+
+@import "components/_header.scss";
+@import "components/_footer.scss";
+@import "components/_navigation.scss";
+// Import component styles
+@import "components/_buttons.scss";
+@import "components/home.scss";
+@import "about";
+
+/* ----------- Banner For Every Page ---------- */
+.page__banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: var(--size-7);
+}
+
+
+/* -------------------- End ------------------- */
+
+
+
+
+
+
+/* ############################################ */
+/*                 MEDIA QUIRES                 */
+/* ############################################ */
+
+
+/* media quires for responsive mobile header */
+@media only screen and (max-width: 1110px) {
+  .hamburger {
+    display: block;
+  }
+  .header__main {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .nav__wrapper {
+    display: none;
+  }
+
+  body {
+    position: relative;
+  }
+
+  .nav__wrapper.show {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-color-2);
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    z-index: 100;
+  }
+
+  .nav__main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ul__main {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+}
+/* ############################################ */
+/*         MEDIA QUIRE FOR TABLET 950PX         */
+/* ############################################ */
+@media (max-width: 950px) {
+  /* ------------------ Hero ------------------ */
+
+  .hero__graphic img {
+    width: 551px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  /* ------------------ About ----------------- */
+  .about__graphic{
+    order: 2;
+    width: var(--size-10);
+  }
+
+  .about__box {
+    flex-wrap: wrap;
+     gap: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ############################################ */
+/*         MEDIA QUIRE FOR Mobile 450PX        */
+/* ############################################ */

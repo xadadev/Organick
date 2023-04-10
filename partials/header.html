@@ -1,0 +1,75 @@
+<script>
+  /* -------- HAMBURGER MENU JS Toggle ------- */
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelectorAll('.nav__wrapper');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.forEach((element) => {
+    element.classList.toggle('show');
+  });
+});
+</script>
+
+
+  <header id="header" class="header__main flx wrp">
+    <!-- logo -->
+    <div class="logo__main">
+      <img src="./assets/graphics/header/main-logo.png" alt="Organick logo" />
+    </div>
+
+    <!-- ------------------ Nav ------------------ -->
+    <div class="nav__wrapper">
+      <nav class="nav__main">
+        <ul class="ul__main flx">
+          <a href="/index.html">
+            <li>Home</li>
+          </a>
+          <a href="/about.html">
+            <li>About</li>
+          </a>
+          <li class="dropdown">
+            <a href="/shope.html">Shope</a>
+            <ul class="dropdown-menu">
+              <li><a href="/Shop-Single.html">Shop Single</a></li>
+              
+            </ul>
+          </li>
+          <a href="">
+            <li>projects</li>
+          </a>
+          <a href="">
+            <li>news</li>
+          </a>
+        </ul>
+      </nav>
+
+      <div class="search flx">
+        <label for="search"></label>
+        <input type="text" id="search" />
+        <a href="">
+          <img src="./assets/graphics/header/search-icon.png" alt="search icon" />
+        </a>
+      </div>
+      <div id="search-results">
+  </div>
+      <div class="cart flx">
+        <img src="./assets/graphics/header/cart-icon.png" alt="cart icon" />
+        <p id="cart-count">cart (0)</p>
+
+        <div class="cart__items">
+          <p>cart itmes</p>
+          <ul class="flx">
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- -------------- Humber Menu -------------- -->
+    <button class="hamburger" type="button">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+  </header>
