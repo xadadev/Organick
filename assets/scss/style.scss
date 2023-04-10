@@ -1,16 +1,15 @@
+
 // Import base styles
-@import "base/_base.scss";
+@use "base/base";
+@use "components/header";
+@use "components/footer";
+@use "components/navigation";
 
-
-
-
-@import "components/_header.scss";
-@import "components/_footer.scss";
-@import "components/_navigation.scss";
 // Import component styles
-@import "components/_buttons.scss";
-@import "components/home.scss";
-@import "about";
+@use "components/buttons";
+@use "components/home";
+@use "about";
+
 
 /* ----------- Banner For Every Page ---------- */
 .page__banner{

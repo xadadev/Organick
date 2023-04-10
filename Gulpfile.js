@@ -1,11 +1,14 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
   return gulp.src('assets/scss/*.scss') // Path to Sass files
+    .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(gulp.dest('assets/scss')) // Path to output directory for CSS files
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('assets/css')) // Path to output directory for CSS files
     .pipe(browserSync.stream());
 });
 
