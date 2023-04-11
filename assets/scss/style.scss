@@ -2,7 +2,6 @@
 // Import base styles
 @use "base/base";
 @use "components/header";
-
 @use "components/footer";
 @use "components/navigation";
 
@@ -10,6 +9,7 @@
 @use "components/buttons";
 @use "components/home";
 @use "about";
+@use "blog";
 
 
 /* ----------- Banner For Every Page ---------- */

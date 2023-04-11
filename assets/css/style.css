@@ -231,6 +231,10 @@ p {
   color: var(--primary-color-1);
 }
 
+.fa.fa-chevron-circle-down {
+  font-size: 14px;
+}
+
 /* ---------------- .dropdown --------------- */
 .dropdown {
   position: relative;
@@ -855,7 +859,8 @@ p {
 .blog__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 15rem;
 }
 
 .blog__post {
@@ -869,17 +874,18 @@ p {
 }
 
 .blog-tag {
-  font-size: var(--font-subtitle);
-  background-color: #fff;
-  width: 75px;
-  height: 75px;
+  background-color: #efd372;
+  width: 65px;
+  height: 65px;
   border-radius: 50px;
-  text-align: center;
-  font-weight: 800;
   margin: 1rem;
   padding: 0.5rem;
   color: var(--primary-color-1);
-  line-height: 1.2;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
 }
 
 .post-1 {
@@ -1022,7 +1028,7 @@ input::selection {
 .about__why-sub {
   gap: 1rem;
   padding: var(--size-2);
-  background: var(--secondary-color-1);
+  background: var(--secondary-color-2);
   width: fit-content;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -1127,6 +1133,46 @@ input::selection {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+
+.blog__banner {
+  background-image: url(/assets/graphics/Blog-page/Banner.png);
+}
+
+.blog__author {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.blog__author p {
+  color: var(--primary-color-1);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+}
+.blog__author p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fa.fa-user {
+  color: var(--primary-color-2);
+}
+
+.post-3 {
+  background-image: url(/assets/graphics/Blog-page/blog-post-img-3.png);
+}
+
+.post-4 {
+  background-image: url(/assets/graphics/Blog-page/blog-post-img-4.png);
+}
+
+.post-5 {
+  background-image: url(/assets/graphics/Blog-page/blog-post-img-5.png);
+}
+
+.post-6 {
+  background-image: url(/assets/graphics/Blog-page/blog-post-img-6.png);
 }
 
 /* ----------- Banner For Every Page ---------- */

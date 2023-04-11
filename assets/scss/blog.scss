@@ -1,0 +1,47 @@
+.blog__banner{
+    background-image: url(/assets/graphics/Blog-page/Banner.png);
+}
+
+.blog__author{
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  
+    
+    p{
+        color: var(--primary-color-1);
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+}
+
+.fa.fa-user{
+color: var(--primary-color-2);
+}
+
+
+.post-3{
+    background-image: url(/assets/graphics/Blog-page/blog-post-img-3.png);
+  }
+  
+  
+  .post-4{
+    background-image: url(/assets/graphics/Blog-page/blog-post-img-4.png);
+  }
+  
+
+  .post-5{
+    background-image: url(/assets/graphics/Blog-page/blog-post-img-5.png);
+  }
+  
+  
+  .post-6{
+    background-image: url(/assets/graphics/Blog-page/blog-post-img-6.png);
+  }
+  

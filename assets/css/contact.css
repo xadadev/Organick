@@ -1,0 +1,26 @@
+.contact__banner {
+  background-image: url(/assets/graphics/contact-page/Banner.png);
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.contact__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__detail {
+  display: flex;
+  flex-direction: column;
+}
+.contact__detail span {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+/*# sourceMappingURL=contact.css.map */

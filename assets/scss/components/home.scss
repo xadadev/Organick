@@ -433,7 +433,9 @@
 .blog__content{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 15rem;
+
 }
 
 .blog__post{
@@ -447,17 +449,18 @@
 }
 
 .blog-tag{
-  font-size: var(--font-subtitle);
-    background-color: #fff;
-    width: 75px;
-    height: 75px;
-    border-radius: 50px;
-    text-align: center;
-    font-weight: 800;
-    margin: 1rem;
-    padding: 0.5rem;
-    color: var(--primary-color-1);
-    line-height: 1.2;
+  background-color: #efd372;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  margin: 1rem;
+  padding: 0.5rem;
+  color: var(--primary-color-1);
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
 }
 
 .post-1{

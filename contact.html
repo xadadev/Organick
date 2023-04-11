@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------- Favicon -------------- -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/graphics/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/graphics/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/graphics/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- ------------ Font-awsome ------------ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- ------------- Google Fonts -------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700;900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <!-- -------------- Splide Css --------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <!-- --------------- Main Css ---------------- -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <title>Organick | Contact</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <div class="page__banner contact__banner">
+      <h2>Contact</h2>
+    </div>
+
+    <main class="wrp">
+      <div class="contact__grid">
+        <div class="contact__left">
+          <p class="xd_subtitle">location</p>
+          <h2>Our Farms</h2>
+          <p>
+            Established fact that a reader will be distracted by the readable
+            content of a page when looking a layout. The point of using.
+          </p>
+
+          <div class="contact__location">
+            <span class="flx">
+              <img
+                src="/assets/graphics/contact-page/locqation-Icon.png"
+                alt=""
+              />
+            
+            
+              <p>
+                New York, USA:
+                <br />
+                299 Park Avenue New York,
+                <br> 
+                New York 10171
+              </p>
+            </span>
+
+            <span class="flx">
+              <img
+                src="/assets/graphics/contact-page/locqation-Icon.png"
+                alt=""
+              />
+           
+              <p>
+                London, UK:
+
+                <br />
+                30 Stamford Street,
+                <br>  London SE1 9LQ
+              </p>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact__right">
+          <div class="contact__title">
+            <h2>We'd love to talk about how we can work together.</h2>
+            <p>
+              Simply dummy text of the printing and typesetting industry. Lorem
+              had ceased to been the industry's standard dummy text ever since
+              the 1500s, when an unknown printer took a galley.
+            </p>
+          </div>
+
+          <div class="contact__detail">
+            <span>
+              <img
+                src="/assets/graphics/contact-page/contact-icon.svg"
+                alt=""
+              />
+              <p>
+                Massege <br />
+                support@organic.com
+              </p>
+            </span>
+            <span>
+              <img src="/assets/graphics/contact-page/call-icon.svg" alt="" />
+              <p>
+                Contact Us
+                <br />
+                +01 123 456 789
+              </p>
+            </span>
+          </div>
+
+          <div class="footer__soical">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ------------ Custom Js ------------- -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- ------------- Splide Js ------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+      /* ---------- SPLIDE SLIDER --------- */
+      var splide = new Splide(".splide", {
+        type: "loop",
+        drag: "free",
+        snap: true,
+        perPage: 1,
+        perMove: 1,
+        gap: 20,
+        arrows: false,
+        pauseOnHover: true,
+        autoplay: true,
+      });
+
+      splide.mount();
+    </script>
+
+    <!-- ######################################### -->
+    <!--                  JQUERY                   -->
+    <!-- ######################################### -->
+    <!-- this will target the footer by Id #footer -->
+    <div id="footer"></div>
+    <!-- jquery to trigger the Id #footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jquery script to make it trigger the header & footer -->
+    <script>
+      $(function () {
+        $("#header").load("/partials/header.html");
+        $("#footer").load("/partials/footer.html");
+      });
+    </script>
+  </body>
+</html>
