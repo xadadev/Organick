@@ -2,14 +2,19 @@
 // Import base styles
 @use "base/base";
 @use "components/header";
+@use "media-queries";
 @use "components/footer";
+
 @use "components/navigation";
 
 // Import component styles
+
 @use "components/buttons";
 @use "components/home";
 @use "about";
 @use "blog";
+@use "shope";
+@use "shop-single";
 
 
 /* ----------- Banner For Every Page ---------- */

@@ -15,8 +15,9 @@ gulp.task('sass', function() {
 gulp.task('serve', function() {
   browserSync.init({
     server: {
-      baseDir: './' // Path to website root directory
-    }
+      baseDir: './'
+    },
+    open: true // This option will automatically open the browser for you
   });
 
   gulp.watch('assets/scss/*.scss', gulp.series('sass')); // Path to Sass files

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-/* ---------------- Qunatity Js --------------- */
+/* ---------------- Cart Quantity Js --------------- */
  // get the input element
  const input = document.querySelector('.product-qty');
 

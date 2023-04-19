@@ -3,13 +3,29 @@
 /*                    FOOTER                    */
 /* ############################################ */
 
+@use "../media-queries" as br; // import the media queries file before using the mixin
+
+
+
 .footer__grid{
     display: grid;
-    grid-template-columns: 1fr 50% 1fr;
-   /* justify-items: center; */
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+
+    @include br.tablet {
+      grid-template-columns: 1fr;
+    }
+  
   }
   
   
+   
+
+    
+         
+        
+  
+ 
   
   .footer__col-1,
   .footer__col-2{
@@ -23,6 +39,10 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    @include br.tablet {
+      display: block;
+    }
   }
   
   .footer__col-2 p{

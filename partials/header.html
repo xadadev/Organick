@@ -8,6 +8,12 @@ hamburger.addEventListener('click', () => {
     element.classList.toggle('show');
   });
 });
+
+
+
+
+
+
 </script>
 
 
@@ -54,17 +60,55 @@ hamburger.addEventListener('click', () => {
       </div>
       <div id="search-results">
   </div>
+
+
       <div class="cart flx">
-        <img src="./assets/graphics/header/cart-icon.png" alt="cart icon" />
+        <img src="./assets/graphics/header/cart-icon.png" class="cart__icon" alt="cart icon" />
         <p id="cart-count">cart (0)</p>
 
         <div class="cart__items">
-          <p>cart itmes</p>
-          <ul class="flx">
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
-          </ul>
+          <p>cart items</p>
+          <div class="cart__single">
+            <div class="cart__image">
+             
+            <img src="/assets/graphics/Shop/product-3.png" alt="">
+            </div>
+            
+            <div class="cart__info">
+                <p class="product__name">Nuts</p>
+              
+                  <div class="product__price-single">
+                    <p class="product__discount">$20.00</p>
+                    <p class="product__price">$13.00</p>
+                    </div>
+                 
+            
+                    <div class="product__detail">
+                        <p>Quantity :</p>
+                        <span class="qty__btn">
+                        <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
+            <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1">
+            <button class="qty-count qty-count--add" data-action="add" type="button">+</button>
+            </span>
+                       
+                    </div>
+
+            
+                
+            </div>
+           
+            </div>
+            <div class="cart__btn">
+              <a href="#" class=" xd__btn btn-secondary">view cart
+                <img src="./assets/graphics/hero/btn-arrow-icon.png" alt="">
+            </a>
+
+            <a href="#" class=" xd__btn btn-secondary">checkout
+              <img src="./assets/graphics/hero/btn-arrow-icon.png" alt="">
+          </a>
+            </div>
+        </div>
+      
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@
       href="./assets/graphics/favicon//favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
-    <!-- ------------ Font-awsome ------------ -->
+    <!-- ------------ Font-awesome ------------ -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -57,7 +57,7 @@
     <main class="wrp">
       <div class="contact__grid">
         <div class="contact__left">
-          <p class="xd_subtitle">location</p>
+          <!-- <p class="xd_subtitle">location</p> -->
           <h2>Our Farms</h2>
           <p>
             Established fact that a reader will be distracted by the readable
@@ -70,13 +70,12 @@
                 src="/assets/graphics/contact-page/locqation-Icon.png"
                 alt=""
               />
-            
-            
+
               <p>
-                New York, USA:
+                <strong>New York, USA:</strong> 
                 <br />
                 299 Park Avenue New York,
-                <br> 
+                <br />
                 New York 10171
               </p>
             </span>
@@ -84,15 +83,13 @@
             <span class="flx">
               <img
                 src="/assets/graphics/contact-page/locqation-Icon.png"
-                alt=""
-              />
-           
+                alt=""/>
               <p>
-                London, UK:
-
+               <strong>London, UK:</strong> 
                 <br />
                 30 Stamford Street,
-                <br>  London SE1 9LQ
+                <br />
+                London SE1 9LQ
               </p>
             </span>
           </div>
@@ -100,7 +97,7 @@
 
         <div class="contact__right">
           <div class="contact__title">
-            <h2>We'd love to talk about how we can work together.</h2>
+            <h2>Connect</h2>
             <p>
               Simply dummy text of the printing and typesetting industry. Lorem
               had ceased to been the industry's standard dummy text ever since
@@ -115,14 +112,15 @@
                 alt=""
               />
               <p>
-                Massege <br />
+               <strong>Massege </strong> 
+                <br/>
                 support@organic.com
               </p>
             </span>
             <span>
               <img src="/assets/graphics/contact-page/call-icon.svg" alt="" />
               <p>
-                Contact Us
+              <strong> Contact Us</strong> 
                 <br />
                 +01 123 456 789
               </p>
@@ -137,6 +135,54 @@
           </div>
         </div>
       </div>
+
+<!-- ---------- Contact Form ----------- -->
+<section>
+      		<!-- CONTACT FORM -->
+		<div class="contact">
+	
+
+			<form id="contact-form">
+
+				<p>
+					<label>Full Name</label>
+					<input type="text" name="name" id="name" required placeholder="wick">
+				</p>
+
+        <p>
+					<label>Your Email</label>
+					<input type="email" name="email" id="email" required placeholder="example@yourmail.com">
+				</p>
+
+				<p>
+					<label>Company</label>
+					<input type="text" name="company" id="company" placeholder="yourcompany name here">
+				</p>
+
+			
+
+				<p>
+					<label>Subject</label>
+					<input type="text" name="Subject" id="Subject" placeholder="how can we help">
+				</p>
+
+				<p class="full">
+					<label>Message</label>
+					<textarea name="message" rows="5" id="message" placeholder="hello there,i would like to talk about how to..."></textarea>
+				</p>
+
+				<p class="full">
+					<button type="submit" class="btn-secondary xd__btn">Send Message
+            <img src="./assets/graphics/hero/btn-arrow-icon.png" alt="">
+          </button>
+				</p>
+
+			</form>
+			<!-- End #contact-form -->
+		</div>
+		<!-- End .contact -->
+
+  </section>
     </main>
 
     <!-- ------------ Custom Js ------------- -->
