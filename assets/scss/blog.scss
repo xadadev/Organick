@@ -2,6 +2,12 @@
     background-image: url(/assets/graphics/Blog-page/Banner.png);
 }
 
+
+.blog__content.blog__page-content{
+  max-width: 900px;
+  margin: 0 auto 12rem auto;
+}
+
 .blog__author{
     display: flex;
     align-items: baseline;

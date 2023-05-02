@@ -6,6 +6,89 @@
 @use "../media-queries" as br; // import the media queries file before using the mixin
 
 
+/* ############################################ */
+/*                   SUBSCRIBE                  */
+/* ############################################ */
+#subscribe{
+  padding-block: var(--size-7) var(--size-4);
+
+}
+
+.subscribe{
+  background-image: url(/assets/graphics/subscribe/subscribe-bg.png);
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    flex-wrap: wrap;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    padding: var(--size-5);
+ 
+}
+
+.subscribe h2{
+  max-width: 12ch;
+  color: #fff;
+
+  @include br.mobile{
+    text-align: center;
+  }
+  
+}
+form{
+  column-gap: 0.3rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+form input{
+  padding: var(--size-1);
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  color: var(--primary-color-1);
+ 
+}
+
+input::selection{
+  color: var(--primary-color-1);
+  background-color: var(--primary-color-1);
+}
+
+::placeholder{
+  font-size: 15px;
+  color: #B8B8B8;
+  padding: 0.5rem;
+}
+
+.subscribe__btn{
+  text-transform: capitalize;
+  padding-inline: var(--size-2) !important; 
+  transition: 0.5s linear 0.1s;
+  -webkit-transition: 0.5s linear 0.1s;
+  -moz-transition: 0.5s linear 0.1s;
+  -ms-transition: 0.5s linear 0.1s;
+  -o-transition: 0.5s linear 0.1s;
+
+  @include br.mobile{
+    padding: var(--size-2) var(--size-4) !important;
+  }
+}
+
+.subscribe__btn:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
 
 .footer__grid{
     display: grid;
@@ -16,8 +99,10 @@
       grid-template-columns: 1fr;
     }
   
+
   }
   
+
   
    
 
@@ -31,6 +116,10 @@
   .footer__col-2{
     border-right: 1px solid var(--primary-color-4);
       padding-right: 2rem;
+
+      @include br.tablet {
+        border: 0;
+      }
   }
   
   .footer__col-2{
@@ -48,6 +137,12 @@
   .footer__col-2 p{
     max-width: 42ch;
     text-align: center;
+
+    @include br.tablet{
+      text-align: start;
+     margin-top: 1rem;
+    }
+    
   }
   
   .p-bold{
@@ -56,6 +151,10 @@
   
   .footer__col-3{
     padding-left: 2rem;
+
+    @include br.tablet{
+      padding-left: 0;
+    }
   }
   
   .footer__col-3 ul{
@@ -73,11 +172,31 @@
    padding-bottom: 1.5rem;
   }
   
-  .footer__soical i{
+.footer__soical{
+  
+  gap: 1rem;
+  padding-block: 1rem;
+  flex-wrap: wrap;
+
+  @include br.mobile{
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+  }
+
+
+  & i{
     background: var(--secondary-color-2);
       padding: 1rem;
       border-radius: 50px;
       font-size: 1.5rem;
       color: var(--primary-color-1);
+      @include br.tablet{
+        margin-right: 1rem;
+      }
+     
   }
+}
+
+ 
   

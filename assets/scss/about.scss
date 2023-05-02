@@ -1,6 +1,9 @@
 /* ############################################ */
 /*                     ABOUT                    */
 /* ############################################ */
+@use "../scss/media-queries" as br; // import the media queries file before using the mixin
+
+
 
 .about__banner{
     background-image: url(../graphics/about-page/about-banner-bg.png);
@@ -12,6 +15,10 @@
     grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
     gap: 2.5rem;
     align-items: end;
+
+    @include br.mobile{
+      grid-template-columns: 1fr;
+    }
   }
 
   .about__right{
@@ -24,6 +31,11 @@
   .about__sub-content{
     gap: 1rem;
     margin-bottom: 1rem;
+
+    @include br.tablet{
+      flex-wrap: wrap;
+
+    }
   }
 
   .about__title{
@@ -34,11 +46,19 @@
   }
 
 
-  @media (max-width:950px){
     .about__left{
-      order: 2;
+      @include br.tablet{
+        order: 2;
+      }
+      
+     img{
+        @include br.mobile{
+          display: none;
+        }
+       
+      }
     }
-  }
+
 
 /* ############################################ */
 /*                    WHY US                    */
@@ -72,12 +92,15 @@
 
   .about__why-detail{
     gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .about__why-box{
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    flex: 1;
     align-items: center;
     padding: var(--size-2);
     text-align: center;
@@ -115,9 +138,14 @@
  .organic__col{
   gap: 2.5rem;
   align-items: stretch;
+  justify-content: center;
   
   img{
     border-radius: 18px;
+
+    @include br.tablet{
+      order: -1;
+    }
   }
 
   span{
@@ -125,6 +153,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 60ch;
     border-radius: 18px;
     padding-inline: var(--size-3);
 
@@ -134,6 +163,10 @@
       color: var(--primary-color-1);
     }
   }
+
+  @include br.tablet{
+    flex-wrap: wrap;
+   }
  }
 
  .organic__points,
@@ -141,11 +174,24 @@
   
   gap: 2.5rem;
 
+@include br.tablet{
+  flex-wrap: wrap;
+}
+  
+  @include br.mobile{
+    gap: 1rem;
+  }
+
   .organic__num{
     background-color: var(--primary-color-2);
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 50px;
     color: #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
 

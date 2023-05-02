@@ -11,6 +11,11 @@
   gap: 2.5rem;
   align-items: end;
 }
+@media (max-width: 450px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .about__right {
   display: flex;
@@ -22,6 +27,11 @@
   gap: 1rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 960px) {
+  .about__sub-content {
+    flex-wrap: wrap;
+  }
+}
 
 .about__title {
   font-family: "Roboto";
@@ -30,11 +40,17 @@
   font-weight: 700;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 960px) {
   .about__left {
     order: 2;
   }
 }
+@media (max-width: 450px) {
+  .about__left img {
+    display: none;
+  }
+}
+
 /* ############################################ */
 /*                    WHY US                    */
 /* ############################################ */
@@ -66,12 +82,15 @@
 
 .about__why-detail {
   gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about__why-box {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
   padding: var(--size-2);
   text-align: center;
@@ -107,15 +126,22 @@
 .organic__col {
   gap: 2.5rem;
   align-items: stretch;
+  justify-content: center;
 }
 .organic__col img {
   border-radius: 18px;
+}
+@media (max-width: 960px) {
+  .organic__col img {
+    order: -1;
+  }
 }
 .organic__col span {
   background-color: var(--secondary-color-1);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 60ch;
   border-radius: 18px;
   padding-inline: var(--size-3);
 }
@@ -124,17 +150,39 @@
   font-size: var(--font-subtitle);
   color: var(--primary-color-1);
 }
+@media (max-width: 960px) {
+  .organic__col {
+    flex-wrap: wrap;
+  }
+}
 
 .organic__points,
 .organic__point-1 {
   gap: 2.5rem;
 }
+@media (max-width: 960px) {
+  .organic__points,
+  .organic__point-1 {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  .organic__points,
+  .organic__point-1 {
+    gap: 1rem;
+  }
+}
 .organic__points .organic__num,
 .organic__point-1 .organic__num {
   background-color: var(--primary-color-2);
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 50px;
   color: #fff;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .organic__points p,
 .organic__point-1 p {

@@ -1,1 +1,1 @@
-{"version":3,"sources":["shope.scss"],"names":[],"mappings":"AAAA;EACI","file":"shope.css","sourcesContent":[".shop__banner{\r\n    background-image: url(/assets/graphics/Shop-page/shop-Banner.png);\r\n}"]}
+{"version":3,"sources":["shope.scss"],"names":[],"mappings":"AAAA;EACI;;;AAIJ;EACI;;;AAGJ;EACI","file":"shope.css","sourcesContent":[".shop__banner{\r\n    background-image: url(/assets/graphics/Shop-page/shop-Banner.png);\r\n}\r\n\r\n\r\n.shope img{\r\n    margin: 0 auto;\r\n}\r\n\r\n.product__rating{\r\n    padding-block: 0.5rem;\r\n}"]}

@@ -1,4 +1,12 @@
 .shop__banner {
   background-image: url(/assets/graphics/Shop-page/shop-Banner.png);
 }
+
+.shope img {
+  margin: 0 auto;
+}
+
+.product__rating {
+  padding-block: 0.5rem;
+}
 /*# sourceMappingURL=shope.css.map */

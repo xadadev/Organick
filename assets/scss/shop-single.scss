@@ -1,7 +1,21 @@
 
 
+
+@use "../scss/media-queries" as br; // import the media queries file before using the mixin
+
 .shop-single__banner{
     background-image: url(/assets/graphics/shop-single-page/Banner-Image.jpg);
+}
+
+.products{
+  @include br.tablet{
+    padding-top: 12rem;
+  }
+
+  @include br.mobile{
+    padding-top: 18rem;
+  }
+  
 }
 
 .product__image{
@@ -14,15 +28,23 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    @include br.mobile{
+      align-items: center;
+    }
 }
 
 .product__single{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     justify-items: center;
     gap: 2.5rem;
     padding-bottom: 5rem;
+
+    @include br.mobile{
+      grid-template-columns:1fr;
+    }
 }
 
 .product__price-single{
@@ -41,6 +63,15 @@
 .product__detail{
     justify-content: start;
     border: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include br.mobile{
+      flex-direction: column;
+    }
+
 }
 
 .qty__btn{
@@ -61,6 +92,7 @@ border: 2px solid var(--primary-color-1);
     outline: none;
     color: none;
     background-color: transparent;
+    cursor: pointer;
     }
 
     .product-qty{
@@ -134,4 +166,17 @@ border: 2px solid var(--primary-color-1);
 /* ------------------ PRODUCT ----------------- */
 #single-product{
   padding-bottom: 0;
+}
+
+.product__rating.single{
+  flex: 1 2 100%;
+}
+
+.product__name.single-name{
+  display: flex;
+  justify-content: center;
+}
+
+.product__item img{
+  margin: 0 auto;
 }
