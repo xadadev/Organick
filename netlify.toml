@@ -1,3 +1,8 @@
 [build]
   command = "gulp build"
-  publish = "output/css"
+  publish = "output"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
