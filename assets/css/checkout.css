@@ -1,0 +1,117 @@
+.checkout__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: var(--size-5);
+  gap: 2.5rem;
+}
+
+.contact {
+  padding-block: var(--size-4);
+}
+.contact #contact-form input {
+  border: 1px solid var(--primary-color-4);
+  padding: 0.3rem;
+  background-color: var(--secondary-color-1);
+  width: 100%;
+}
+.contact #phone {
+  -moz-appearance: textfield; /* Firefox */
+}
+.contact #phone::-webkit-outer-spin-button,
+.contact #phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Optional - adjust as needed */
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  column-gap: 2rem;
+}
+#contact-form select {
+  padding: 0.2rem;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.checkout__single__product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--size-3);
+}
+.checkout__single__product img {
+  width: 33%;
+  height: 33%;
+}
+
+.order__summary {
+  border: 2px solid rgba(128, 128, 128, 0.1803921569);
+  border-radius: 16px;
+  padding: var(--size-4);
+}
+
+.checkout__label {
+  background-color: var(--secondary-color-1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+.checkout__label strong {
+  color: var(--primary-color-2);
+}
+.checkout__label img {
+  width: 100px;
+  height: 50px;
+  object-fit: contain;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+}
+th strong, td strong {
+  color: var(--primary-color-2);
+  font-size: var(--size-2);
+  font-weight: 900;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout__total {
+  padding-top: var(--size-4);
+}
+
+.promo-code {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  width: 100%;
+}
+.promo-code input {
+  margin-right: auto;
+  border: 0;
+}
+
+.checkout__billing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: var(--size-3);
+}
+/*# sourceMappingURL=checkout.css.map */
