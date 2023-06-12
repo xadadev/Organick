@@ -38,7 +38,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('output/css')) // Path to output directory for CSS files
+    .pipe(gulp.dest('dist/css')) // Path to output directory for CSS files
     .pipe(browserSync.stream());
 });
 
